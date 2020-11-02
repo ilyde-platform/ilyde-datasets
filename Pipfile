@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 grpcio-tools = "==1.27.2"
 grpcio = "==1.27.2"
+python-decouple = "*"
 
 [requires]
 python_version = "3.6"
