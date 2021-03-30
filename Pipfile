@@ -6,9 +6,17 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-grpcio-tools = "==1.27.2"
-grpcio = "==1.27.2"
+grpcio-tools = "*"
+grpcio = "*"
 python-decouple = "*"
+minio = "==6.0.0"
+botocore = "*"
+mongoengine = "*"
+marshmallow = "*"
+grpc-interceptor = "*"
+grpcio-health-checking = "*"
+dnspython = "*"
+tox = "*"
 
 [requires]
 python_version = "3.6"

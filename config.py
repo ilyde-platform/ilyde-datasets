@@ -4,12 +4,11 @@ from decouple import config
 import os
 
 BASE_DIR = os.path.dirname(__file__)
-DEBUG = config('DEBUG', default=False, cast=bool)
 
-KEYCLOAK_CLIENT_ID = config('KEYCLOAK_CLIENT_ID')
-KEYCLOAK_CLIENT_SECRET = config('KEYCLOAK_CLIENT_SECRET')
-KEYCLOAK_IDENTITY_OPENID_CONFIG_URL = config('KEYCLOAK_IDENTITY_OPENID_CONFIG_URL')
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID', cast=str)
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY', cast=str)
 
+MINIO_HOST = config('MINIO_HOST')
 MINIO_ENDPOINT = config('MINIO_ENDPOINT')
 
 MONGO_DATABASE_URL = config('MONGO_DATABASE_URL')
